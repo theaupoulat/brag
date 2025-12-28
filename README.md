@@ -23,12 +23,30 @@ The brag document concept was popularized by Julia Evans. Read her excellent blo
 ### Prerequisites
 
 - Python 3.10 or higher
-- [uv](https://github.com/astral-sh/uv) package manager (recommended)
+- [pipx](https://pipx.pypa.io/) for global installation (recommended)
 
-### Install with uv
+### Install globally with pipx (Recommended)
+
+Install `brag` so it's available from anywhere on your system, just like `ls` or `git`:
 
 ```bash
-# Clone the repository
+# Install pipx if you don't have it
+pip install --user pipx
+pipx ensurepath
+
+# Clone and install brag globally
+git clone https://github.com/yourusername/brag.git
+cd brag
+pipx install .
+```
+
+After installation, `brag` is available from any directory — no virtual environment activation needed.
+
+### Alternative: Install with uv
+
+If you prefer using [uv](https://github.com/astral-sh/uv) or want a development setup:
+
+```bash
 git clone https://github.com/yourusername/brag.git
 cd brag
 
@@ -37,12 +55,8 @@ uv pip install .
 
 # Or for development (editable install)
 uv pip install -e .
-```
 
-### Run without installing
-
-```bash
-# Run directly during development
+# Run directly without installing
 uv run brag --help
 ```
 
