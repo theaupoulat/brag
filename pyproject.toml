@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [
-    { name = "Your Name", email = "you@example.com" }
+    { name = "Theau Poulat", email = "theau.poulat@gmail.com" }
 ]
 keywords = ["brag", "accomplishments", "cli", "productivity"]
 classifiers = [
@@ -32,12 +32,20 @@ dependencies = [
     "rich>=13.0.0",
 ]
 
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "freezegun>=1.4.0",
+]
+
 [project.scripts]
 brag = "brag.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/brag"
-Repository = "https://github.com/yourusername/brag"
+Homepage = "https://github.com/theaupoulat/brag"
+Repository = "https://github.com/theaupoulat/brag"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/brag"]
