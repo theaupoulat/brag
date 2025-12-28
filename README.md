@@ -5,16 +5,9 @@ A CLI tool to track your work accomplishments and build your brag document.
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## What is a Brag Document?
+**New to brag documents?** See [howto.md](howto.md) for tips on writing effective brag documents.
 
-A brag document is a running record of your work accomplishments. It helps you:
-
-- **Remember your achievements** when it's time for performance reviews
-- **Track your impact** with concrete examples and metrics
-- **Communicate your value** to managers, peers, and future employers
-- **Recognize patterns** in your work and career growth
-
-The concept was popularized by Julia Evans. Read her excellent blog post: [Get your work recognized: write a brag document](https://jvns.ca/blog/brag-documents/).
+The brag document concept was popularized by Julia Evans. Read her excellent blog post: [Get your work recognized: write a brag document](https://jvns.ca/blog/brag-documents/).
 
 ## Features
 
@@ -206,14 +199,6 @@ Files are:
 - **Human-readable** - Open and read them directly
 - **Editable** - Make changes with any text editor
 - **Version-controllable** - Commit to git for history tracking
-
-## Tips for Effective Brag Documents
-
-1. **Be specific** - Include numbers, metrics, and concrete outcomes
-2. **Write regularly** - Add entries weekly or after significant accomplishments
-3. **Focus on impact** - Who benefited? What changed?
-4. **Include context** - Why was this important?
-5. **Don't be modest** - This is your document to showcase your work
 
 ## Dependencies
 
