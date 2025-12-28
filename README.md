@@ -211,6 +211,51 @@ This project uses the following external libraries:
 | [PyYAML](https://github.com/yaml/pyyaml) | YAML parser and emitter for Python | [PyYAML Documentation](https://pyyaml.org/wiki/PyYAMLDocumentation) |
 | [Rich](https://github.com/Textualize/rich) | Rich text and beautiful formatting in the terminal | [Rich Documentation](https://rich.readthedocs.io/) |
 
+## Development
+
+### Running Tests
+
+```bash
+# Install with test dependencies
+uv pip install -e ".[test]"
+
+# Run all tests
+pytest
+
+# Run with coverage
+pytest --cov=brag --cov-report=term-missing
+
+# Run specific test file
+pytest test/unit/test_models.py
+
+# Run specific test
+pytest test/unit/test_models.py::test_entry_creation
+
+# Run with verbose output
+pytest -v
+
+# Run only unit tests
+pytest test/unit/
+
+# Run only integration tests
+pytest test/integration/
+```
+
+### Test Structure
+
+```
+test/
+├── conftest.py                    # Shared fixtures
+├── unit/
+│   ├── test_models.py             # Entry model tests
+│   ├── test_config.py             # Configuration tests
+│   └── test_storage.py            # Storage operation tests
+├── integration/
+│   └── test_cli.py                # CLI command tests
+└── fixtures/
+    └── sample_data.py             # Sample test data
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
