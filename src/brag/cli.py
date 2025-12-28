@@ -292,7 +292,11 @@ def list_entries(week, month, quarter, semester, year, topic):
     for entry_date in sorted(entries_by_date.keys()):
         console.print(f"[bold blue]## {entry_date.isoformat()}[/bold blue]")
         for entry in entries_by_date[entry_date]:
-            console.print(Markdown(entry.to_markdown()))
+            console.print(f"[bold]{entry.title}[/bold]")
+            console.print(f"  • [dim]Topic:[/dim] {entry.topic}")
+            console.print(f"  • [dim]Impact:[/dim] {entry.impact}")
+            if entry.tags:
+                console.print(f"  • [dim]Tags:[/dim] {', '.join(entry.tags)}")
             console.print()
 
 
