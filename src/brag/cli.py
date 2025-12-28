@@ -149,9 +149,9 @@ def add_entry_cmd():
 
     # What did you do?
     title = questionary.text(
-        "What did you do?",
+        "What did you do?\n",
         multiline=True,
-        instruction="(Enter your accomplishment. Press Meta+Enter or Esc then Enter to submit)",
+        instruction="(Press Meta+Enter or Esc then Enter to submit)",
     ).ask()
 
     if not title or not title.strip():
@@ -162,9 +162,9 @@ def add_entry_cmd():
 
     # What was the impact?
     impact = questionary.text(
-        "What was the impact?",
+        "What was the impact? (Who benefited? What changed? Any metrics?)\n",
         multiline=True,
-        instruction="(Who benefited? What changed? Any metrics? Press Meta+Enter or Esc then Enter to submit)",
+        instruction="(Press Meta+Enter or Esc then Enter to submit)",
     ).ask()
 
     if not impact or not impact.strip():
@@ -175,7 +175,7 @@ def add_entry_cmd():
 
     # Tags (optional)
     tags_input = questionary.text(
-        "Tags? (optional, comma-separated)",
+        "Tags? (optional, comma-separated)\n",
     ).ask()
 
     tags = []
