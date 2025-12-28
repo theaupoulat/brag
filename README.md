@@ -215,6 +215,17 @@ Files are:
 4. **Include context** - Why was this important?
 5. **Don't be modest** - This is your document to showcase your work
 
+## Dependencies
+
+This project uses the following external libraries:
+
+| Library | Description | Documentation |
+|---------|-------------|---------------|
+| [Click](https://github.com/pallets/click) | Command line interface creation toolkit | [Click Documentation](https://click.palletsprojects.com/) |
+| [Questionary](https://github.com/tmbo/questionary) | Interactive command line prompts | [Questionary Documentation](https://questionary.readthedocs.io/) |
+| [PyYAML](https://github.com/yaml/pyyaml) | YAML parser and emitter for Python | [PyYAML Documentation](https://pyyaml.org/wiki/PyYAMLDocumentation) |
+| [Rich](https://github.com/Textualize/rich) | Rich text and beautiful formatting in the terminal | [Rich Documentation](https://rich.readthedocs.io/) |
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
